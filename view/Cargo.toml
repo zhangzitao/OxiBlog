@@ -1,0 +1,14 @@
+[package]
+name = "view"
+version = "0.1.0"
+authors = ["zzt <369815332@qq.com>"]
+edition = "2018"
+
+[dependencies]
+# template
+askama = { git = "https://github.com/djc/askama", branch = "master" }
+
+db = { path = "../db" }
+
+[build-dependencies]
+askama = { git = "https://github.com/djc/askama", branch = "master" }
