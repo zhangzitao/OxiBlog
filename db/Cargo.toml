@@ -10,19 +10,10 @@ diesel = { version = "1.3.3", features = ["r2d2", "postgres", "uuid", "serde_jso
 dotenv = "0.13.0"
 
 uuid = { version = "0.6.5" }
-# serde = "1.0.80"
-# serde_derive = "1.0.80"
-# serde_json = "1.0.32"
+md5 = "0.6.0"
 
 # time need
 chrono = "0.4.6"
-md5 = "0.6.0"
-
-# template
-askama = "0.7"
 
 # self plugins
 restriction_for_diesel = { path = "./restriction_for_diesel" }
-
-[build-dependencies]
-askama = "0.7"
