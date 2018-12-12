@@ -25,6 +25,24 @@ Besides the teamwork goal, we can easily change technology stack of a space alon
 - askama
 - bootstrap
 
+### Plugins
+Tired of typing same sentence agian and agian, I wrote two plugins to aviod that situation. They generate some methods for saving time.
+
+- restriction_for_diesel
+    - implement keyword RestrictionForDiesel for derive, it has these attributes
+        - belongs_to
+        - has_many_children
+        - ...
+    - implement methods
+        - has_all_parents
+        - has_any_child
+        - restrict_delete
+        - restrict_insert
+        - restrict_update
+- short_for_actix
+    - implement keyword GenMessage
+    
+
 ### How to use it
 1. make sure your environment has these contents
    - Rust >= 1.31
