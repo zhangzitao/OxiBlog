@@ -1,5 +1,5 @@
 ## OxiBlog
----
+
 ### Overview
 
 OxiBlog is a simple and stupid project made by Rust language for myself. Cargo's workspace is so powerful for teamwork so OxiBlog is seperated to three work spaces which are isolate with each other and loosely coupled.
@@ -29,7 +29,9 @@ Besides the teamwork goal, we can easily change technology stack of a space alon
 1. make sure your environment has these contents
    - Rust >= 1.31
    - postgresql development tool
+
 2. clone this project to your system
+
 3. configuring the database
 ```shell
 > cd db
@@ -39,17 +41,22 @@ and write your database url in .env file.
 > diesel setup
 > diesel migration run
 ```
+
 4. insert the seed data
 ```shell
 > cd ..
 > cargo run -p db --bin seed
 ```
 Root user, root category, first article will be added by this step.
+
 5. run the application
 ```shell
 > cargo run -p app
 ```
+
 6. open your web browser typing the address 127.0.0.1:3000
+
+---
 
 ### Pressure Test
 
