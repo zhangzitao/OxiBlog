@@ -33,28 +33,29 @@ Besides the teamwork goal, we can easily change technology stack of a space alon
 2. clone this project to your system
 
 3. configuring the database
-```shell
-> cd db
-```
-and write your database url in .env file.
-```shell
-> diesel setup
-> diesel migration run
-```
+    ```shell
+    > cd db
+    ```
+    write your database url in .env file.
+    ```shell
+    > diesel setup
+    > diesel migration run
+    ```
 
 4. insert the seed data
-```shell
-> cd ..
-> cargo run -p db --bin seed
-```
-Root user, root category, first article will be added by this step.
+    ```shell
+    > cd ..
+    > cargo run -p db --bin seed
+    ```
+    Root user, root category, first article will be added by this step.
 
 5. run the application
-```shell
-> cargo run -p app
-```
+    ```shell
+    > cargo run -p app
+    ```
 
 6. open your web browser typing the address 127.0.0.1:3000
+
 
 ---
 
